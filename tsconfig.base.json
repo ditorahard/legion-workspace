@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@legion-workspace/legion-playground-layout": [
+        "libs/legion-playground-layout/src/index.ts"
+      ],
+      "@legion-workspace/legion-ui-shared" : [
+        "libs/legion-ui-shared/src/index.ts"
+      ],
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

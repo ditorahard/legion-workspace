@@ -12,6 +12,9 @@ import {
 } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 
+import { Base } from '@legion-workspace/legion-playground-layout';
+import {Button, Select, Textfield} from '@legion-workspace/legion-ui-shared';
+
 export const App = () => {
   const [whatsNextYCoord, setWhatsNextYCoord] = useState<number>(0);
   const scrollViewRef = useRef<null | ScrollView>(null);
@@ -34,6 +37,12 @@ export const App = () => {
             </Text>
           </View>
           <View style={styles.section}>
+            <Base />
+            <Button />
+            <Select />
+            <Textfield />
+          </View>
+          {/* <View style={styles.section}>
             <View style={styles.hero}>
               <View style={styles.heroTitle}>
                 <Svg
@@ -535,7 +544,7 @@ export const App = () => {
                 />
               </Svg>
             </View>
-          </View>
+          </View> */}
         </ScrollView>
       </SafeAreaView>
     </>
